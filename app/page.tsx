@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/container";
 import { Filters } from "@/components/filters";
 import { Products } from "@/components/products";
 import { Sorting } from "@/components/filters/sorting";
+import { Suspense } from "react";
 
 const HomePage = () => {
   return (
@@ -16,7 +17,9 @@ const HomePage = () => {
       <Container className="flex space-x-8 my-10">
         <Filters />
         <Products>
-          <Sorting />
+          <Suspense>
+            <Sorting />
+          </Suspense>
         </Products>
       </Container>
     </>
