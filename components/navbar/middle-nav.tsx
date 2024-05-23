@@ -6,7 +6,7 @@ export const MiddleNav = () => {
   return (
     <div className="bg-primary">
       <Container className="py-5 flex justify-between space-x-24">
-        <Image src="/images/logo.svg" alt="logo" width="254" height="48" />
+        <Image src="/images/Logo.svg" alt="logo" width="254" height="48" />
 
         {/* Search */}
         <SearchBar />
